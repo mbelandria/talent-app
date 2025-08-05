@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const deps = require('../../package.json').dependencies;
 const { ModuleFederationPlugin } = require('webpack').container;
 
 module.exports = {
@@ -34,7 +34,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
-    new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -49,11 +48,11 @@ module.exports = {
     }),
     new ModuleFederationPlugin({
       remotes: {
-        mfeAuth: 'mfeAuth@http://localhost:3001/remoteEntry.js',
+        mfeAuth: 'mfeAuth@http://localhost:3002/remoteEntry.js',
       },
       shared: {
-        react: { singleton: true },
-        'react-dom': { singleton: true },
+        react: { singleton: true, requiredVersion: deps.react },
+        'react-dom': { singleton: true, requiredVersion: deps['react-dom'] },
       },
     }),
   ],
@@ -62,7 +61,7 @@ module.exports = {
       directory: path.resolve(__dirname, 'public'),
       publicPath: '/',
     },
-    port: 3000,
+    port: 3001,
     open: true,
     historyApiFallback: true,
   },
