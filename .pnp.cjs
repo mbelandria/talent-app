@@ -50,7 +50,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@testing-library/dom", "npm:10.4.1"],\
           ["@testing-library/jest-dom", "npm:6.6.4"],\
-          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:16.3.0"],\
+          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:15.0.7"],\
           ["@types/jest", "npm:30.0.0"],\
           ["@types/node", "npm:24.2.0"],\
           ["@types/react", "npm:18.3.23"],\
@@ -69,7 +69,6 @@ const RAW_RUNTIME_STATE =
           ["talent-app", "workspace:."],\
           ["ts-loader", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:9.5.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
-          ["web-vitals", "npm:5.1.0"],\
           ["webpack", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:5.101.0"],\
           ["webpack-cli", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:6.0.1"],\
           ["webpack-dev-server", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:5.2.2"],\
@@ -529,30 +528,26 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@testing-library/react", [\
-      ["npm:16.3.0", {\
-        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@testing-library-react-npm-16.3.0-fcde6d23a2-10c0.zip/node_modules/@testing-library/react/",\
+      ["npm:15.0.7", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@testing-library-react-npm-15.0.7-fc23780217-10c0.zip/node_modules/@testing-library/react/",\
         "packageDependencies": [\
-          ["@testing-library/react", "npm:16.3.0"]\
+          ["@testing-library/react", "npm:15.0.7"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:16.3.0", {\
-        "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-60cf32e30f/4/AppData/Local/Yarn/Berry/cache/@testing-library-react-npm-16.3.0-fcde6d23a2-10c0.zip/node_modules/@testing-library/react/",\
+      ["virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:15.0.7", {\
+        "packageLocation": "./.yarn/__virtual__/@testing-library-react-virtual-7e18b418ff/4/AppData/Local/Yarn/Berry/cache/@testing-library-react-npm-15.0.7-fc23780217-10c0.zip/node_modules/@testing-library/react/",\
         "packageDependencies": [\
           ["@babel/runtime", "npm:7.28.2"],\
           ["@testing-library/dom", "npm:10.4.1"],\
-          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:16.3.0"],\
+          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:15.0.7"],\
           ["@types/react", "npm:18.3.23"],\
           ["@types/react-dom", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:18.3.7"],\
-          ["@types/testing-library__dom", null],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:18.3.1"]\
         ],\
         "packagePeers": [\
-          "@testing-library/dom",\
-          "@types/react-dom",\
           "@types/react",\
-          "@types/testing-library__dom",\
           "react-dom",\
           "react"\
         ],\
@@ -6046,7 +6041,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@testing-library/dom", "npm:10.4.1"],\
           ["@testing-library/jest-dom", "npm:6.6.4"],\
-          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:16.3.0"],\
+          ["@testing-library/react", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:15.0.7"],\
           ["@types/jest", "npm:30.0.0"],\
           ["@types/node", "npm:24.2.0"],\
           ["@types/react", "npm:18.3.23"],\
@@ -6065,7 +6060,6 @@ const RAW_RUNTIME_STATE =
           ["talent-app", "workspace:."],\
           ["ts-loader", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:9.5.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
-          ["web-vitals", "npm:5.1.0"],\
           ["webpack", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:5.101.0"],\
           ["webpack-cli", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:6.0.1"],\
           ["webpack-dev-server", "virtual:abf1b1a1d53430a71684e2dd1af42854dc1db0d9d72a9293be16b19ca6af5305dbce657ef46763e00cf6c40e0f706c9c64e181417561b99e9ab1fd3daabcff2e#npm:5.2.2"],\
@@ -6562,15 +6556,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["minimalistic-assert", "npm:1.0.1"],\
           ["wbuf", "npm:1.7.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["web-vitals", [\
-      ["npm:5.1.0", {\
-        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/web-vitals-npm-5.1.0-8b1652e588-10c0.zip/node_modules/web-vitals/",\
-        "packageDependencies": [\
-          ["web-vitals", "npm:5.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\

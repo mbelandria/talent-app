@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './Login';
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
+
+// Para desarrollo independiente, renderizamos el componente Login directamente
 root.render(
-  <BrowserRouter>
-    <Login />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
 );

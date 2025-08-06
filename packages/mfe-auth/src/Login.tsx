@@ -7,7 +7,7 @@ const Login = () => {
   const setUser = useAuthStore((state) => state.setUser);
   const navigate = useNavigate();
   const [email, setEmail] = useState('monica@example.com');
-  const [password, setPassword] = useState('password');
+  const [password, setPassword] = useState('V3neXuela*2025');
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();

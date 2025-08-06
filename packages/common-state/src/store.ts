@@ -1,12 +1,14 @@
 import { create } from 'zustand';
-import { User } from '../../common-types/src/index';
+import { User } from 'common-types';
 
-interface AuthState {
+export interface AuthState {
   user: User | null;
-  setUser: (user: User | null) => void;
+  setUser: (user: User) => void;
+  logout: () => void;
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
-  setUser: (user: User | null) => set({ user }),
+  setUser: (user) => set({ user }),
+  logout: () => set({ user: null }),
 }));

@@ -4,11 +4,16 @@ const path = require('path');
 const deps = require('../../package.json').dependencies;
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/index',
   mode: 'development',
   devServer: {
-    port: 3002, // Puerto para el MFE de autenticación
-    open: true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    port: 3002,
+  },
+  output: {
+    publicPath: 'auto',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -17,32 +22,38 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: 'mfeAuth', // Nombre único para tu MFE
-      filename: 'remoteEntry.js', // Archivo de entrada para el contenedor
+      name: 'mfe_auth',
+      filename: 'remoteEntry.js',
       exposes: {
-        // Módulos que este MFE comparte
         './Login': './src/Login',
       },
       shared: {
-        react: { singleton: true, requiredVersion: deps.react },
-        'react-dom': { singleton: true, requiredVersion: deps['react-dom'] },
+        ...deps,
+        react: {
+          singleton: true,
+          requiredVersion: deps.react,
+        },
+        'react-dom': {
+          singleton: true,
+          requiredVersion: deps['react-dom'],
+        },
         'react-router-dom': {
           singleton: true,
           requiredVersion: deps['react-router-dom'],
         },
-        zustand: { singleton: true, requiredVersion: deps.zustand },
-        'common-state': { singleton: true, requiredVersion: '1.0.0' },
+        zustand: {
+          singleton: true,
+          requiredVersion: deps.zustand,
+        },
       },
     }),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
   ],
 };
