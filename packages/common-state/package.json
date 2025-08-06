@@ -1,0 +1,14 @@
+{
+  "name": "common-state",
+  "version": "1.0.0",
+  "main": "src/store.ts",
+  "license": "MIT",
+  "dependencies": {
+    "common-types": "workspace:*",
+    "zustand": "*"
+  },
+  "exports": {
+    ".": "./src/store.ts",
+    "./store": "./src/store.ts"
+  }
+}

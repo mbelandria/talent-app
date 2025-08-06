@@ -8,9 +8,13 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "common-state": "workspace:*",
+    "common-types": "workspace:*",
     "react": "*",
     "react-dom": "*",
-    "web-vitals": "*"
+    "react-router-dom": "*",
+    "web-vitals": "*",
+    "zustand": "*"
   },
   "devDependencies": {
     "@types/jest": "*",

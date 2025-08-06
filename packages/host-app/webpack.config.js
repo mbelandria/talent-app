@@ -53,6 +53,12 @@ module.exports = {
       shared: {
         react: { singleton: true, requiredVersion: deps.react },
         'react-dom': { singleton: true, requiredVersion: deps['react-dom'] },
+        'react-router-dom': {
+          singleton: true,
+          requiredVersion: deps['react-router-dom'],
+        },
+        zustand: { singleton: true, requiredVersion: deps.zustand },
+        'common-state': { singleton: true, requiredVersion: '1.0.0' },
       },
     }),
   ],
