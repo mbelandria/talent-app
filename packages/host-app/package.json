@@ -13,7 +13,6 @@
     "react": "*",
     "react-dom": "*",
     "react-router-dom": "*",
-    "web-vitals": "*",
     "zustand": "*"
   },
   "devDependencies": {

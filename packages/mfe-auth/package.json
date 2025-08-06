@@ -12,7 +12,8 @@
     "common-types": "workspace:*",
     "react": "*",
     "react-dom": "*",
-    "react-router-dom": "*"
+    "react-router-dom": "*",
+    "zustand": "*"
   },
   "devDependencies": {
     "@types/jest": "*",

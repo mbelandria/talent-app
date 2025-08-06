@@ -3279,7 +3279,6 @@ const RAW_RUNTIME_STATE =
           ["style-loader", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:4.0.0"],\
           ["ts-loader", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:9.5.2"],\
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
-          ["web-vitals", "npm:5.1.0"],\
           ["webpack", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:5.101.0"],\
           ["webpack-cli", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:6.0.1"],\
           ["webpack-dev-server", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:5.2.2"],\
@@ -4200,7 +4199,8 @@ const RAW_RUNTIME_STATE =
           ["typescript", "patch:typescript@npm%3A5.9.2#optional!builtin<compat/typescript>::version=5.9.2&hash=5786d5"],\
           ["webpack", "virtual:bd97ec1cf05051d6537a99bf53d92e54b6fbfc4ffd0ad6b6ae29e71b08ef649e3297f75079721280a0951d035bb5e4af92388db598767549d497200c1bcbbab5#npm:5.101.0"],\
           ["webpack-cli", "virtual:bd97ec1cf05051d6537a99bf53d92e54b6fbfc4ffd0ad6b6ae29e71b08ef649e3297f75079721280a0951d035bb5e4af92388db598767549d497200c1bcbbab5#npm:6.0.1"],\
-          ["webpack-dev-server", "virtual:bd97ec1cf05051d6537a99bf53d92e54b6fbfc4ffd0ad6b6ae29e71b08ef649e3297f75079721280a0951d035bb5e4af92388db598767549d497200c1bcbbab5#npm:5.2.2"]\
+          ["webpack-dev-server", "virtual:bd97ec1cf05051d6537a99bf53d92e54b6fbfc4ffd0ad6b6ae29e71b08ef649e3297f75079721280a0951d035bb5e4af92388db598767549d497200c1bcbbab5#npm:5.2.2"],\
+          ["zustand", "virtual:1fbcce6ba525d9cf2e57e2680c0c93d4bb4568682bde2de0a0034b7f94c1fa4fc20a8cd8250f018cde9eb5fb9b31b54ea900c9ddb08ad67943e096517ce31154#npm:5.0.7"]\
         ],\
         "linkType": "SOFT"\
       }]\
