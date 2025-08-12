@@ -1,5 +1,10 @@
-import { create } from 'zustand';
-import { User } from 'common-types';
+import { create } from "zustand";
+import { User } from "common-types";
+
+console.log(
+  "%c[MFE] common-state module executed",
+  "color: red; font-weight: bold;"
+);
 
 export interface AuthState {
   user: User | null;
