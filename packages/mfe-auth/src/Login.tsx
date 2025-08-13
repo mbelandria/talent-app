@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useAuthStore } from "common-state/store";
+import { useAuthStore } from "common-state";
 import { User } from "common-types";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {

@@ -1,6 +1,5 @@
-import React from 'react';
+import { useAuthStore } from 'common-state';
 import { Link } from 'react-router-dom';
-import { useAuthStore } from 'common-state/store';
 
 export const Header = () => {
   const user = useAuthStore((state) => state.user);
