@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Header } from './Header';
+import { Route, Routes } from 'react-router-dom';
 import GuestRoute from './GuestRoute';
+import { Header } from './Header';
 
 // Lazy load the remote component
 const LoginPage = React.lazy(() => import('mfeAuth/Login'));

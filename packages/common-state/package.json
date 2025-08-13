@@ -4,7 +4,7 @@
   "main": "src/store.ts",
   "license": "MIT",
   "dependencies": {
-    "common-types": "workspace:*",
+    "common-types": "*",
     "zustand": "*"
   },
   "exports": {
